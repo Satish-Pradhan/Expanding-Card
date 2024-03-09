@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(rgb(30, 17, 219),rgb(177, 216, 36));
+}
+.container{
+    margin-left: 40px;
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    overflow: hidden;
+}
+.pannel{
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    border-radius: 40px;
+    overflow: hidden;
+    color: rgb(238, 72, 12);
+    cursor: pointer;
+    flex: 0.4;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.9s ease-in;
+}
+.pannel h3{
+     font-size: 20px;
+     position: absolute;
+     bottom: 20px;
+     left: 10px;
+     margin:0;
+     opacity: 0;
+}  
+.pannel.active{
+    flex: 3;
+    
+}
+.pannel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 500px ){
+    .container{
+        width:100vw;
+    }
+    .pannel:nth-of-type(4),
+    .pannel:nth-of-type(5){
+        display: none;
+    }
+
+}
