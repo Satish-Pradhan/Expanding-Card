@@ -3,9 +3,9 @@
     padding: 0;
 }
 body{
-    height: 100px;
+    height: 100vh;
     width: 100px;
-    background: linear-gradient(rgb(180, 178, 206),rgb(177, 216, 36));
+    background: linear-gradient(blue,white);
 }
 .container{
     margin-left: 40px;
